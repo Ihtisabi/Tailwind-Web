@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VentureLex Consultation</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-o3e6PLzDFezMgTLzFGMeNwWMCaCf9Gy3wqvZZ8D0Sm4zUBpMQC9nFFH9MwTQUJ5A" crossorigin="anonymous">
+
+  <link href="style.css" rel="stylesheet"> 
+  <link rel="icon" href="apple-touch-icon.ico" type="image/png">
+
+  
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- Sticky Top Bar with Hamburger Menu -->
+  <header id="top-bar" class="fixed w-full top-0 left-0 bg-black text-white z-50 shadow-md top-bar">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <div class="logo text-2xl font-bold">VentureLex</div>
+      <!-- Desktop Menu -->
+      <nav class="desktop-menu flex space-x-4">
+        <a href="#hero" class="hover:text-yellow-500">Home</a>
+        <a href="#about" class="hover:text-yellow-500">About</a>
+        <a href="#services" class="hover:text-yellow-500">Services</a>
+        <a href="#testimonials" class="hover:text-yellow-500">Testimonials</a>
+        <a href="#contact" class="hover:text-yellow-500">Contact</a>
+      </nav>
+      
+
+      <!-- Hamburger Menu Icon for Mobile -->
+      <div class="mobile-menu">
+        <button id="menu-btn" class="block text-white focus:outline-none">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu-dropdown" class="hidden bg-black text-white flex flex-col space-y-4 p-4">
+      <a href="#hero" class="hover:text-yellow-500">Home</a>
+      <a href="#about" class="hover:text-yellow-500">About</a>
+      <a href="#services" class="hover:text-yellow-500">Services</a>
+      <a href="#testimonials" class="hover:text-yellow-500">Testimonials</a>
+      <a href="#contact" class="bg-yellow-500 text-black py-2 px-4 rounded-full hover:bg-yellow-600 text-center">Contact Us</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="h-screen bg-cover bg-center" style="background-image: url(slide-1.jpg);">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="container mx-auto h-full flex flex-col justify-center items-center text-center text-white px-4 relative">
+      <h1 class="text-4xl sm:text-6xl font-bold relative">VentureLex Consultation</h1>
+      <p class="text-lg sm:text-xl mt-4 relative">We provide the best solutions for your business needs</p>
+      <a href="#services" class="mt-6 bg-yellow-500 text-black py-2 px-4 rounded-full hover:bg-yellow-600 relative">Explore Services</a>
+    </div>
+  </section>
+
+  <section id="about" class="py-20 bg-white flex flex-col-reverse lg:flex-row items-center">
+    <div class="container mx-auto px-6 lg:px-8 flex flex-col lg:flex-row">
+      
+      <!-- Logo Section -->
+      <div class="flex-1 mb-8 lg:mb-0 lg:mr-8">
+        <img src="logo.jpeg" alt="About Us" class="w-1/3 lg:w-1/3 rounded-lg shadow-lg mx-auto">
+      </div>
+  
+      <!-- Text Section -->
+      <div class="flex-1 text-left lg:text-left lg:pl-4 lg:pr-8">
+        <h2 class="text-4xl font-bold mb-8">About VentureLex</h2>
+        <p class="text-lg leading-relaxed">
+          VentureLex Consultation is your trusted legal partner, specializing in comprehensive business law services designed to help your enterprise thrive. With years of expertise in both law and business, we offer legal strategies that align with your goals, ensuring your business is protected at every stage of its journey.
+        </p>
+        <ul class="mt-4 space-y-4">
+          <li class="text-lg leading-relaxed">
+            <span class="font-bold">Integrity:</span> We uphold the highest standards of professionalism and ethical practice.
+          </li>
+          <li class="text-lg leading-relaxed">
+            <span class="font-bold">Client-Centric:</span> Your business needs come first. We tailor solutions to fit your unique challenges and opportunities.
+          </li>
+          <li class="text-lg leading-relaxed">
+            <span class="font-bold">Strategic Guidance:</span> We don’t just provide legal advice—we offer long-term strategies that fuel your success.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+
+ <!-- Services Section -->
+<section id="services" class="py-20 bg-cover bg-center" style="background-image: url('slide-2.jpg');">
+    <div class="bg-black bg-opacity-50 py-20"> <!-- Dark overlay -->
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-8 text-white">Our Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="p-6 bg-white rounded-lg shadow-lg">
+            <h3 class="text-2xl font-semibold mb-4">Business Legal Consultation</h3>
+            <p>One-on-one sessions with business attorneys to help you understand your legal obligations in operating a business, including registration and necessary permits.</p>
+          </div>
+          <div class="p-6 bg-white rounded-lg shadow-lg">
+            <h3 class="text-2xl font-semibold mb-4">Contract Drafting and Review</h3>
+            <p>Services for drafting and reviewing business contracts, including partnership agreements, sales agreements, and lease agreements, ensuring compliance and protection of your rights.</p>
+          </div>
+          <div class="p-6 bg-white rounded-lg shadow-lg">
+            <h3 class="text-2xl font-semibold mb-4">Legal Document Management</h3>
+            <p>Assistance in preparing the legal documents required for business operations, including articles of incorporation, tax documents, and other necessary paperwork to ensure smooth legal administration.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <!-- Testimonials Section with Carousel -->
+  <section id="testimonials" class="py-20 bg-gray-100">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-8">Testimonials</h2>
+      <div class="swiper testimonial-carousel">
+        <div class="swiper-wrapper">
+          <!-- Testimonial 1 -->
+          <div class="swiper-slide p-6 bg-white rounded-lg shadow-lg">
+            <p class="text-lg italic">"Great service! Highly recommend it."</p>
+            <h4 class="mt-4 font-semibold">John Doe</h4>
+            <span class="text-sm text-gray-500">CEO at Company</span>
+          </div>
+          <!-- Testimonial 2 -->
+          <div class="swiper-slide p-6 bg-white rounded-lg shadow-lg">
+            <p class="text-lg italic">"Amazing experience working with them."</p>
+            <h4 class="mt-4 font-semibold">Jane Smith</h4>
+            <span class="text-sm text-gray-500">Marketing Manager</span>
+          </div>
+          <!-- More Testimonials... -->
+        </div>
+        <!-- Pagination for Testimonials -->
+        <div class="swiper-pagination mt-4"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="py-20 bg-gray-200">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-8">Contact Us</h2>
+      <form action="#" method="POST" class="max-w-lg mx-auto">
+        <div class="mb-6">
+          <label for="name" class="block mb-2 text-sm font-bold">Name</label>
+          <input type="text" id="name" name="name" class="w-full p-3 rounded border border-gray-300" placeholder="Your Name" required>
+        </div>
+        <div class="mb-6">
+          <label for="email" class="block mb-2 text-sm font-bold">Email</label>
+          <input type="email" id="email" name="email" class="w-full p-3 rounded border border-gray-300" placeholder="Your Email" required>
+        </div>
+        <div class="mb-6">
+          <label for="message" class="block mb-2 text-sm font-bold">Message</label>
+          <textarea id="message" name="message" rows="4" class="w-full p-3 rounded border border-gray-300" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="bg-yellow-500 text-black py-2 px-4 rounded-full hover:bg-yellow-600">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-black text-white py-10">
+    <div class="container mx-auto px-6">
+      <!-- Top Footer: Website Name, Social Media, Schedule, and Services -->
+      <div class="flex flex-col md:flex-row justify-between items-start mb-8 md:pl-8 space-y-8 md:space-y-0">
+        <!-- Website Name and Social Media -->
+        <div class="w-full md:w-1/3 text-left md:ml-4 order-1 md:order-none">
+          <h2 class="text-3xl font-bold mb-4">VentureLex</h2>
+          <!-- Social Media Icons -->
+          <div class="flex justify-start space-x-4">
+            <a href="#" class="hover:text-gray-400"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="hover:text-gray-400"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="hover:text-gray-400"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="hover:text-gray-400"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="hover:text-gray-400"><i class="fab fa-google"></i></a>
+          </div>
+        </div>
+  
+        <!-- Schedule -->
+        <div class="w-full md:w-1/3 text-left order-3 md:order-none">
+          <h3 class="font-bold text-lg mb-2">Schedule</h3>
+          <p class="text-sm leading-relaxed">
+            Monday-Thursday: 09:00 AM - 20:00 PM<br>
+            Friday-Sunday: 09:00 AM - 18:00 PM
+          </p>
+        </div>
+  
+        <!-- Services -->
+        <div class="w-full md:w-1/3 text-left order-2 md:order-none">
+          <h3 class="font-bold text-lg mb-2">Services</h3>
+          <ul class="space-y-2 text-sm">
+            <li>Business Legal Consultation</li>
+            <li>Contract Drafting and Review</li>
+            <li>Legal Document Management</li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Divider -->
+      <div class="border-t border-gray-700 my-6"></div>
+  
+      <!-- Bottom Footer: Centered Copyright -->
+      <div class="flex justify-center">
+        <p class="text-sm">&copy; 2024 VentureLex. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+ <!-- Back to Top Button -->
+<button id="back-to-top" title="Back to Top" onclick="scrollToTop()">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19V6m0 0l-5 5m5-5l5 5"></path>
+    </svg>
+  </button>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    
+    // Initialize Swiper
+    const swiper = new Swiper('.testimonial-carousel', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    });
+
+    // Show/Hide Back to Top Button
+    window.onscroll = function() {
+      const backToTopBtn = document.getElementById('back-to-top');
+      const topBar = document.getElementById('top-bar');
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backToTopBtn.style.display = "flex"; // Show button
+        topBar.classList.add('scrolled'); // Add scrolled class
+      } else {
+        backToTopBtn.style.display = "none"; // Hide button
+        topBar.classList.remove('scrolled'); // Remove scrolled class
+      }
+    };
+
+    // Scroll to Top Function
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+   
+
+    // Mobile Menu Toggle
+const menuBtn = document.getElementById('menu-btn');
+const mobileMenu = document.getElementById('mobile-menu-dropdown');
+
+menuBtn.addEventListener('click', function() {
+  mobileMenu.classList.toggle('hidden');
+});
+  </script>
+  
+  
+</body>
+</html>
